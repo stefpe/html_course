@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Login</h3>
+    <form>
+        <p>
+            <label>Username: <input placeholder="Username" type="text" name="username" /></label>
+        </p>
+        <p>
+            <label>Passwort: <input placeholder="Passwort" type="password" name="password" /></label>
+        </p>
+        <p>
+            <!--<button type="submit">anmelden</button>-->
+            <input type="submit" value="anmelden">
+        </p>
+    </form>
+
+    <h3>Registrierungsformular</h3>
+    <form>
+        <fieldset>
+            <legend>Persönliche Angaben</legend>
+            <p>
+                <label>
+                    Salutation
+                    <br />
+                    <select name="salutation">
+                        <option>--None--</option>
+                        <option>Frau</option>
+                        <option>Herr</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Vorname: <input name="firstName" /></label>
+            </p>
+            <p>
+                <label>Nachname: <input name="lastName" /></label>
+            </p>
+            <p>
+                Geschlecht:
+                <label><input type="radio" name="gender" value="female" />Frau</label>
+                <label><input type="radio" name="gender" value="male" />Mann</label>
+                <label><input type="radio" name="gender" value="div" />Divers</label>
+            </p>
+            <p>
+                <label>Email:<input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Geburtsdatum:<input type="date" name="birthDate"></label>
+            </p>
+            <p>
+                <label>
+                    Adresse:
+                    <br />
+                    <textarea name="address" cols="30" rows="3"></textarea>
+                </label>
+            </p>
+            <p>
+                <button type="submit">absenden</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
